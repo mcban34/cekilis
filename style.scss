@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+input{
+  width: 98%;
+  height: 2.5rem;
+  margin-top: 1rem;
+  padding-left: .5rem;
+}
+.parent{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgb(255, 255, 255) 0%, rgba(251, 251, 251, 0.1) 100%), linear-gradient(90deg, #84d2ff, #8d5acd);;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .parent-content{
+    background-color: white;
+    padding: 1.8rem;
+    .isimler{
+      width: 100%;
+      height: 10rem !important;
+      margin-top: 1rem;
+    }
+  }
+}
