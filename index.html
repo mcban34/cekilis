@@ -10,12 +10,26 @@
 <body>
     <div class="parent">
       <div class="parent-content">
-        <h3>Memoşun Çekiliş Uygulaması</h3>
-        <h4>Test Aşamasındadır! Lütfen Consolu kontrol ediniz!</h4>
-        <textarea name="" id="" class="isimler"></textarea>
-        <input type="text" placeholder="Kazanan Sayısı" class="kazananSayisi">
-        <input type="text" placeholder="yedekSayisi" class="yedekSayisi">
-        <button class="my" onclick="tikla()">Çekilişi Başlat</button>
+        <h2>Çekiliş Uygulaması</h2>
+        <h4>Test Aşamasındadır!</h4>
+        <input type="number" min="0" placeholder="Kazanan Sayısı" class="kazananSayisi">
+        <input type="number" min="0" placeholder="Yedek Sayısı" class="yedekSayisi">
+        <textarea name="" id="" placeholder="mcban,semraerdognn,bayramunl,burakylcn..." class="isimler"></textarea>
+        <p class="alert-p">**Lütfen Kullanıcılar arasını virgülle ayırınız</p>
+        <div class="alert">
+          <p>Kullanıcı İsimleri Panoya Kopyalandı</p>
+        </div>
+          <p class="alert-danger">Lütfen Boş Değer Bırakmayınız</p>
+        <div class="btnDiv">
+          <button class="mybtn" onclick="tikla()">Çekilisi Başlat</button>
+          <button class="mybtn" onclick="copyMessage()">Hızlı Kullanıcı İsimleri Kopyala</button>
+        </div>
+      </div>
+      <div class="parentCekilisSonucu">
+          <h3>Çekililiş Kazananları</h3>
+          <ul class="kazanan"></ul>
+          <h3>Çekililiş Yedekleri</h3>
+          <ul class="yedek"></ul>
       </div>
     </div>
     <script src="app.js"></script> 
